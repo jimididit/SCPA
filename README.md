@@ -1,35 +1,75 @@
-# SCPA
+# Description
 
-Sophisticated cyber penetration attacks is a series of advanced techniques, notes and guidance that will help you to prepare as a hacker on your journey.
+```
+> cat banner.txt
+   ____ _               _   ____
+  / ___| |__   ___  ___| |_/ ___|  ___  ___
+ | |  _| '_ \ / _ \/ __| __\___ \ / _ \/ __|
+ | |_| | | | | (_) \__ \ |_ ___) |  __/ (__
+  \____|_| |_|\___/|___/\__|____/ \___|\___|
+```
 
-## Information Gathering/External Reconnaissance and Vulnerability Assessment
+## `> cat introduction.txt`
 
-Gathering Intel about the target's weaknesses and find an entrance to compromise the network with vulnerability assessment.
+The **SCPA (Sophicated/Simplified Cyber Penetration Attacks)** is for hackers wanting a straight guidance with many sections involves in offensive operations. It outlines in a systematic approach, because there are so many resources that are being broadcast on the internet. I've compiled it together which contains sources have been re-applied providing use cases and scenarios in many ways.
 
-## Exploitation Delivery/Initial Foothold
+## `> whoarewe && cat about_SCPA_project.txt`
 
-Gaining enough reconnaissance about the target's network exploitation will be delivered as the final stage to infiltrate the network with vulnerability assessment and/or social engineering.
+Sebastian Dante Alexander: I'm Sebastian
 
-## Internal Reconnaissance and Enumeration
+Userware: and I'm Userware
 
-Same exact steps as Information Gathering phase but performing the network internally with privilege escalation.
+We've started this project due to our experiences that contains tactics, techniques and procedures (TTP) and we've collected a lot of information just to summarize it all in one. We find it a waste that nobody would go through this effort especially for beginners who barely started. This knowledge will serve you well in your journey.
 
-CrackMapExec, Responder, Bettercap, Powersploit, Nishang, etc. That is related to phase 2, 3, 4 and 5. This 6th phase is part of the final stage of exploitation that the hacker will use any penetration tools that is needed to breach the security when it's necessary.
+## Download digital notebook
 
-## Post Exploitation, Lateral Movement (Using C2 Frameworks) and Maintaining Access
+Sebastian Dante Alexander: Grab a copy to specify a directory using `git` then use [obsidian](https://obsidian.md/) to open the directory.
 
-After the 3rd phase has met any of the requirements in order to maintain access to re-establish the connection and keep penetrating the internal network with persistent access. In this phase the hacker must keep pivoting (island hopping) the target's network to gain more access after digging deeper either using a Command & Control (C2) post exploitation framework with socks proxy (proxychaining) or VPN tunnel (Layer-2 Network)
+```
+$ git clone --depth=1 https://github.com/ghostsec420/SCPA.git && cd SCPA && \
+git sparse-checkout set Notebook
+```
 
-Command and Control (C2): Post exploitation toolkits like Metasploit Framework, Powershell Empire, Cobalt Strike, PupyRAT, and PoshC2.
+Userware: Do you want the latest updates? Grab mine instead since most of them is still work in progress continuously.
 
-## Monitoring and Data Exfiltration
+```
+$ git clone --depth=1 https://github.com/U53RW4R3/SCPA.git && cd SCPA && \
+git sparse-checkout set Notebook
+```
 
-Monitoring and Data Exfiltration: Performing activing sniffing and spoofing in the network using a technique such as, MITM (man-in-the-middle) to capture the unencrypted (clear plain text packets) network protocols such as, SMB, MSSQL, FTP, SMTP, Telnet, etc. Through active sniffing via ARP spoofing or passive sniffing in a compromised machine. Data Exfiltration is when the hacker harvests the data by looting the compromised machines in the network after successful penetration with full access.
+## WORK TO DO
 
-## Miscellaneous
+- [ ] Add tags
+- [ ] Left a lot of TODO labels so go check it out users
+- [ ] Add Active Directory Lab in the **Lab Simulation Setup**
+- [ ] Include references and remove some duplicates
+- [ ] Fill in the information of **Hacking The Cloud**
+- [ ] Provide a mindmap to some sections if necessary
 
-This is optional, however the hacker might find anything valuable whatever if it's related to the operation or not. This phase relates to gain profits of any kind or other sensitive data that is damaging to the organization.
+## Roadmap
 
-## Reporting
+- [ ] **Cryptography** section
+- [ ] **Container (docker, kubernetes, LXC)** section
+- [ ] **Malware Development** section
+- [ ] **Exploit development** section
+- [ ] **Writing Reports** section (maybe)
+- [ ] Include MITRE ATT&CK techniques References
 
-After finishing by conducting a cyber offensive and the last step for every pentesting is about making reports based on their findings.
+---
+## References
+
+- [Hacktricks](https://book.hacktricks.xyz/)
+
+- [Payloads All The Things](https://swisskyrepo.github.io/PayloadsAllTheThings/)
+
+- [Internal All The Things](https://swisskyrepo.github.io/InternalAllTheThings/)
+
+- [Red Team Notes](https://www.ired.team)
+
+- [The Hacker Recipes: The Hacker Tools](https://tools.thehacker.recipes/)
+
+- [DMCXBlue: Red Team Notes](https://dmcxblue.gitbook.io/red-team-notes)
+
+- [N7W Era Infrastructure Penetration Testing Notes](https://infra.newerasec.com)
+
+- [Persistence Info](https://persistence-info.github.io/)
